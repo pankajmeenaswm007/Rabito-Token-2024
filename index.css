@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  font-size:16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+    
+}
+
+
+#nav{
+  z-index: 1111;
+}
+
+#banner_canvas{
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    filter: blur(3px);
+  }
+ 
+
+
+@media only screen and (max-width: 1199px) {
+    #banner_canvas {
+        width: auto !important;
+        height: 100% !important;
+        left: 0;
+        top: 0;
+    }
+}
+
+.Checkout{
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgb(255 255 255 / 7%);
+    border-radius: 15px;
+    padding: 25px;
+    transition: .3s ease-in-out;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+
+footer {
+  background-color: #0e1628;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+ul>li>a{
+  text-decoration: none;
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #203052;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.choose-item {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 15px;
+  padding: 25px;
+  transition: .3s ease-in-out;
+  height: 100%;
+  text-align: center;
+}
+
+.roadmapbox{
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 15px;
+  padding: 25px;
+  transition: .3s ease-in-out;
+  height: 100%;
+
+}
+
+
+.box{
+  width: 63%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: .3s ease-in-out;
+  margin: auto;
+  color: white;
+}
+
+.time{
+  height: 90px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.03);
+  margin: auto;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 500px) {
+  .mynavbar{
+    margin: 15px;
+  }
+  
+}
+
+
+@media only screen and (max-width: 500px) {
+  .box {
+    width: 90%;
+  }
+
+  .mynavbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: 0;
+    z-index: 99;
+    height: auto;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    margin: 0px;
+  }
+  .mynavbar {
+    background: #081526 ;
+    padding: 0px;
+    margin: 0px;
+  }
+
+}
+
+
+.loader{
+  animation: load 2s linear infinite;
+}
+
+@keyframes load {
+  100% {transform: rotate(360deg);}
+}
+
+
+
+
+
+

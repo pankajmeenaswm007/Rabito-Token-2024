@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabito</title>
+    <link rel="icon" href="logo.svg">
+    <link rel="stylesheet" href="index.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <video class="position-absolute d-flex" id="banner_canvas" width="100%" loop muted autoplay played>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.mp4" type="video/ogg">
+    </video>
+
+    <!-- navbar -->
+    <div class="container-fluid mynavbar fixed-top " id="nav">
+        <div class="container ">
+            <div class="row">
+                <div class="col-2 text-center"><img src="logo.svg" alt="" class="img-fluid  " id="logoone" style="height: 80px;">
+                </div>
+                <div class="col-3"></div>
+                <div class="col-7 text-white nav2 mx-auto">
+                    <nav class="navbar navbar-expand-lg float-end  ">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon  " style="color: wheat; background-color: rgb(255, 255, 255);"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="nav nav-navbar pt-4 ">
+                                    <li class="nav-item ps-4"><a href="#">Home</a></li>
+                                    <li class="nav-item ps-4"><a href="#about">About Us</a></li>
+                                    <li class="nav-item ps-4"><a href="#how">How Work</a></li>
+                                    <li class="nav-item ps-4"><a href="#roadmap">Roadmap</a></li>
+                                    <li class="nav-item ps-4"><a href="#contact">Contact Us</a></li>
+                                    <li class="nav-item ps-4"><a href="#faq">FAQ</a></li>
+                                                                       
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container-fluid pt-5 mt-5" >
+        <div class="container pt-5">
+            <div class="row">
+                <h1 class="text-center fw-bold pb-5">Enjoy Passive Earnings On Autopilot By Simply <br> Holding The
+                    Rabito Token.</h1>
+                <div class="col-sm-3 m-3 mx-auto  choose-item d-flex">
+                    <p><img src="money-09b32f1b.svg" alt=""></p>&nbsp;&nbsp;
+                    <p>
+                        <span class="fw-bold">Buy Back & Burn System</span><br>
+                        Actively repurchases its own tokens, making them rarer and more valuable.
+                    </p>
+                </div>
+                <div class="col-sm-3 m-3  mx-auto choose-item d-flex">
+                    <p><img src="brain-5be6129f.svg" alt=""></p>&nbsp;&nbsp;
+                    <p>
+                        <span class="fw-bold">1st Decentralized Hedge Fund</span><br>
+                        100% autonomous, profits passively return to the Rabito community of holders.
+                    </p>
+                </div>
+                <div class="col-sm-3 m-3  mx-auto  choose-item d-flex">
+                    <p><img src="recurring-31590217.svg" alt=""></p>&nbsp;&nbsp;
+                    <p>
+                        <span class="fw-bold"> Profitable Than The Market</span><br>
+                        Our revolutionary AI trading bot is designed to outperform top crypto traders.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row pt-5 pb-5">
+                <div class="col-sm-6">
+                    <img src="monkey.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-6 mt-5   text-center">
+                    <div class="box">
+                        <p class="fs-5 pt-3">Join The Rabito Pre-Sale</p>
+                        <div class="time">
+                            <p class="p-3 "><span id="hour" class="fs-1  m-3"></span><span id="minute"
+                                    class="fs-1 m-3"></span><span id="second" class="fs-1 m-3"> </span></p>
+
+
+                        </div>
+                        <p class="fs-5 mt-3">How many Rabito Tokens would you like to buy?</p>
+                        <p>YOUR Wallet Address</p>
+                        <p id="address">-------------------------
+                        </p>
+                        <p class="text-primary fw-bold">1 Rabito = $ 0.205 USD </p>
+                        <p><button class="btn bg-danger m-2"><img src="BNB.svg" alt=""> &nbsp;BNB</button><button
+                                class="btn bg-warning m-2"><img src="usdt.svg" alt=""> &nbsp;USDT</button><button
+                                class="btn bg-success m-2"><img src="card.svg" alt=""> &nbsp;CARD</button></p>
+                        <p>
+                            <label for="" class="m-2">USDT you pay</label>
+                            <label for="" class="m-2">&nbsp;&nbsp;$GBTC you receive</label>
+                        </p>
+                        <p class="d-flex ">
+                            <input type="text" name="" id="" placeholder="USDT" class="form-control w-25 mx-auto">
+                            <input type="text" name="" id="" placeholder="GBTC" class="form-control w-25 mx-auto">
+                        </p>
+                        <p>
+                            <button class="btn bg-warning    m-3" id="connect" onclick="connect()">Connect
+                                Wallet</button>
+                            <button class="btn bg-primary m-3" onclick="buy()">Buy with BNB</button>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- top arrow -->
+
+    <div class="container-fluid" style="position:absolute">
+        <!-- arrow top -->
+        <a href="#"> <button type="button" id="arrowbtn"
+                style="right: 10px; background-color: #0a5a3c; border: none; position: fixed; bottom:5%; z-index:1; display: none;"
+                class="p-3 rounded ">
+                <i class="fa-solid fa-arrow-up text-white fs-5"></i>
+            </button></a>
+
+    </div>
+
+    <a href="" name="how"></a>
+    <!-- 3 Steps To Unlock Passive Wealth -->
+
+    <div class="containe-fluid pt-5 pb-5">
+        <div class="container">
+            <p class="fw-bold text-center display-5">3 Steps To Unlock <br> Passive Wealth</p>
+            <p class="fs-5 text-center ">As a Rabito holder, the AI does all the heavy lifting for you — from
+                executing <br> strategic trades and
+                seizing market opportunities to steadily generating earnings, <br>
+                and more.</p>
+
+            <div class="row pt-5">
+                <div class="col-sm-3 m-2 p-2 mx-auto choose-item">
+                    <p class="fs-1 fw-bold">BUY</p>
+                    <h4>Take Advantage Of The Presale</h4>
+                    <p>Price starts at $0.05 per token and increases every 48 hours!</p>
+                </div>
+                <div class="col-sm-3 m-2 p-2 mx-auto choose-item">
+                    <p class="fs-1 fw-bold">HOLD</p>
+                    <h4>Sit Back And Relax</h4>
+                    <p>The AI-driven bot buys back and burns Rabito tokens from the market.</p><br>
+                </div>
+                <div class="col-sm-3 m-2 p-2 mx-auto choose-item">
+                    <p class="fs-1 fw-bold">EARN</p>
+                    <h4>Your Profits Consistently Grow</h4>
+                    <p>With minimal effort and a substantial 100% APY gains to your portfolio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="" name="about"></a>
+    <!-- What is Rabito? -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="row mx-auto pt-5 pb-5">
+                <div class="col-sm-6">
+                    <p class="display-5 fw-bold">What is Rabito?</p>
+                    <p class="fs-4 fw-bold">Not your average primate, nor your favorite meme, or another crypto
+                        wealth dream gone wrong.
+                        Rabito is a hedge fund system entirely driven by artificial intelligence and designed to
+                        outsmart even the slickest traders out there.</p>
+
+                    <p class="fs-5">
+                        We've learned from the good, the bad, the winning, and the not-so-winning cryptocurrency
+                        blueprints over time to develop a highly profitable venture in the crypto jungle. Rabito
+                        has been trained on years of historical trades and powerful strategies of !leading hedge
+                        funds and expert traders. The ultimate goal? Making those high returns typically reserved
+                        for elites accessible to all investors. <br><br>
+
+                        Here's the beauty of it: all you have to do is buy it, hold it, and the passive earnings are
+                        basically returning to you automatically. And nope, it's not taking coffee breaks. It works
+                        non-stop, with zero effort on your end. Deployed on the blockchain, Rabito operates around
+                        the clock, making precise trades 24/7 on top cryptocurrencies like Bitcoin and Ethereum.
+                        <br><br>
+                        The magic happens through a buy-back and burn mechanism, where profits are funneled back to
+                        the community. It's the first decentralized autonomous hedge fund, and the wealth flows
+                        directly to the token owners without any detours.
+                    </p>
+                </div>
+
+                <div class="col-sm-6">
+                    <img src="what-is-harambe-f44a0094.png" alt="" class="img-fluid mt-5">
+                </div>
+            </div>
+
+            <div class="row p-5 choose-item  text-center ">
+                <p><img src="logo-white-8864f948.svg" alt=""></p>
+                <p class="fw-bold fs-4">Rabito Is Set To Rock The Charts With a Whopping 100% ROI (This Year
+                    Alone!)</p>
+                <p>Each successful trade triggers the purchase and immediate burning of Rabito Tokens, increasing
+                    demand, reducing supply, and driving <br> prices to the moon.</p>
+                <p class="p-"><button class="btn text-center "
+                        style="background-color: rgb(132, 1, 82); color: white;">GET MY TOKENS</button></p>
+                <p class="fs-5 fw-bold mt-4">1 Rabito = $ 0.205 USD</p>
+                <p>Hurry - Token price increases on March 28th!</p>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-sm-3 m-2 choose-item p-3 mx-auto">
+                    <img src="recurring-white-fd686f57.svg" alt="" class="p-3">
+                    <p class="fs-5 fw-bold">Hassle-Free Profits</p>
+                    <P>No active trading needed! Simply hold the tokens and watch your gains grow.</P>
+                </div>
+                <div class="col-sm-4 m-2 choose-item p-3 mx-auto">
+                    <img src="investment-13996b0d.svg" alt="" class="p-3">
+                    <p class="fs-5 fw-bold">Decentralized Hedge Fund</p>
+                    <P>Operates on its own and shares profits directly with the community of token holders.</P>
+                </div>
+                <div class="col-sm-3 m-2 choose-item p-3 mx-auto">
+                    <img src="brain-gains-99a9e8bb.svg" alt="" class="p-3">
+                    <p class="fs-5 fw-bold">Auto-trading AI Bot</p>
+                    <P>The AI takes care of it all, essentially doing everything an expert trader would do.</P>
+                </div>
+
+            </div>
+            <div class="row mt-3 pb-5">
+                <div class="col-sm-3 m-2 choose-item p-3 mx-auto">
+                    <img src="money-white-15ca22cf.svg" alt="" class="p-3">
+                    <p class="fs-5 fw-bold">Buy Back & Burn Cycle</p>
+                    <P>It buys back its own tokens, steadily reducing the supply and increasing their value.</P>
+                </div>
+                <div class="col-sm-4 m-2 choose-item p-3 mx-auto">
+                    <img src="analysis-3b1ce832.svg" alt="" class="p-3">
+                    <p class="fs-5 fw-bold">20x Gain For Pre-Sale</p>
+                    <P>The pre-sale allows you to get tokens starting at $0.05 each, increasing every 48 hours. They
+                        will be publically listed on Uniswap for $1 per token!</P>
+                </div>
+                <div class="col-sm-3 m-2 choose-item p-3 mx-auto">
+                    <img src="investment-13996b0d.svg" alt="" class="p-3">
+                    <p class="fs-5 fw-bold">24/7 Blockchain Trading</p>
+                    <P>The AI bot executes accurate trades round-the-clock on top cryptocurrencies</P>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Tokenomics -->
+    <div class="container-fluid pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h1>Tokenomics</h1>
+                    <h3 class="text-danger">690M Total Tokens. No Tax. <br> No Team Tokens.</h3>
+                    <p class="fs-4">Token Contract Address (0x548….DB3C2)</p>
+                    <hr>
+
+                    <p class="fs-4">Marketing & community <br> engagement: <span class="float-end fw-bold">34.5
+                            M</span></p>
+                    <hr>
+                    <p class="fs-4">CEX listings: <span class="float-end fw-bold">69 M</span></p>
+                    <hr>
+                    <p class="fs-4">Burned on mint:
+                        <span class="float-end fw-bold">103.5 M</span>
+                    </p>
+                    <hr>
+                    <p class="fs-4">Presale:
+                        <span class="float-end fw-bold">207 M</span>
+                    </p>
+                    <hr>
+                    <p class="fs-4">DEX listing:
+                        <span class="float-end fw-bold">276 M</span>
+                    </p>
+                    <hr>
+
+                </div>
+
+                <div class="col-sm-5 p-5 mx-auto text-center">
+                    <img src="chart.png" alt="" class="img-fluid mt-5">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Roadmap -->
+
+    <div class="container-fluid" style="background-color: #00091853;" >
+        <div class="container">
+           
+            <a href="" name="roadmap"></a>
+            <div class="row pb-5  mx-auto pt-5">
+                <h1 class="text-center">Rabito Token ROADMAP</h3>
+                    <div class="col-sm-10 pt-4  mx-auto">
+                        <div class="row">
+                            <div class="col-sm-6 m-4 p-3 mx-auto roadmapbox"
+                               >
+                                <h5>TOKEN LAUNCH</h5>
+                                <h2>Step 1</h2>
+                                <p class="p-2 fs-5">
+                                    <i class="fa-solid fa-check fs-5 p-1" style="color: #f400c3;"></i>&nbsp;
+                                    Rabito Token pre-sale launch <br>
+                                    <i class="fa-solid fa-spinner fs-5 p-1 loader" style="color: #FFD43B;"></i>&nbsp;
+                                    Complete pre-sale <br>
+                                    <i class="fa-regular fa-clock fs-5 p-1" style="color: #B197FC;"></i>&nbsp;
+                                    List Rabito on Uniswap <br>
+                                    
+                                </p>
+                            </div>
+                            <div class="col-sm-6 m-4 p-3 roadmapbox "
+                               >
+                                <h5>KUCOIN AND GATE LISTINGS</h5>
+                                <h2>Step 2</h2>
+                                <p class="p-2 fs-5">
+                                    <i class="fa-solid fa-spinner loader fs-5 p-1" style="color: #FFD43B;"></i>&nbsp;
+                                    Onboard influencers <br>
+                                    <i class="fa-regular fa-clock  fs-5 p-1" style="color: #B197FC;"></i>&nbsp;
+                                    Launch $1M marketing campaign <br>
+                                    <i class="fa-solid fa-spinner loader fs-5 p-1" style="color: #FFD43B;"></i>&nbsp;
+                                    List Rabito on Gate and Kucoin <br>
+                                    <i class="fa-solid fa-spinner loader fs-5 p-1" style="color: #FFD43B;"></i>&nbsp;
+                                    Deploy Rabito Token <br>
+                                    
+                                </p>
+                            </div>
+                            <div class="col-sm-6 m-4 p-3  mx-auto roadmapbox"
+                                >
+                                <h5>MARKETING EXPANSION</h5>
+                                <h2>Step 3</h2>
+                                <p class="p-2 fs-5">
+                    
+                                    <i class="fa-regular fa-clock fs-5 p-1" style="color: #B197FC;"></i>&nbsp;
+                                    Launch $5M marketing campaign<br>
+                                    
+                                    <i class="fa-regular fa-clock fs-5 p-1" style="color: #B197FC;"></i>&nbsp;
+                                    Integrate Stocks into Rabito Token <br>
+                                    
+                                    
+                                </p>
+                            </div>
+                            <div class="col-sm-6 m-4  p-3 roadmapbox "
+                               >
+                                <h5>BINANCE AND COINBASE LISTINGS</h5>
+                                <h2>Step 4</h2>
+                                <p class="p-2 fs-5">
+                    
+                                    <i class="fa-regular fa-clock fs-5 p-1" style="color: #B197FC;"></i>&nbsp;
+                                    Integrate Rabito into top crypto bots<br>
+                                    
+                                    <i class="fa-regular fa-clock fs-5 p-1" style="color: #B197FC;"></i>&nbsp;
+                                    List Rabito on Binance and Coinbase <br>
+                                    <i class="fa-regular fa-clock fs-5 p-1" style="color: #B197FC;"></i>&nbsp;
+                                    Add additional token utilities <br>
+                                    
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- faq -->
+    <a href="" name="faq"></a>
+    <div class="faq" id="faq" data-aos="fade-up">
+        <div class="container  pt-5 pb-5" data-aos="fade-up">
+            <div class="row pb-5">
+                <h1 class="text-center pb-4  fw-bold">Frequently Asked question</h1>
+                <div class="accordion mt-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button fw-bold fs-5 text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne " style="background-color: #000918; color: white;">
+                                Why should I buy it in the pre-sale?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-dark ">
+                                <p class="text-dark">By taking part in the presale, you can acquire the Rabito
+                                    token at a significant discount. The price per token will start at $0.05 and
+                                    increase every 48 hours. <br><br>
+
+                                    The Rabito Token will then be listed on Uniswap at $1. Early participants that
+                                    took part in the presale will realize up to 20x gain! <br><br>
+
+                                    Also the presale is necessary to provide liquidity for the Rabito bot to
+                                    start trading. Instead of going the traditional route with venture capitalists,
+                                    we chose a community-first approach. This way, we not only raise liquidity for
+                                    the bot but also share profits with our community.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mt-2">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed fw-bold fs-5 text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo" style="background-color: #000918; color: white;">
+                                Why is Rabito unique in the crypto space?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="text-dark">Rabito is an ERC-20 token built to be community-owned. Think
+                                    of it like a massive pizza, comprising a supply of 690,000,000 tokens. Our goal
+                                    is to distribute most of the pizza slices back to our token holders. <br><br>
+
+                                    In the presale, 30% of the tokens are sold to build a strong community. Another
+                                    40% will be part of the initial DEX liquidity when Rabito is listed on Uniswap.
+                                    <br><br>
+
+                                    What makes us stand out even more is our AI trading bot. It does the work for
+                                    you, actively buying and burning tokens from the market with the profits it
+                                    makes from trading Bitcoin, Ethereum, and other top cryptocurrencies. This kind
+                                    of technology is unique compared to traditional hedge fund systems.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mt-2">
+                        <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button collapsed fw-bold fs-5 text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                                aria-controls="collapseThree" style="background-color: #000918; color: white;">
+                                How do I know the AI trading bot is accurate?
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="text-dark">Our bot is deployed on the blockchain, so anyone can analyze
+                                    the trading data independently. <br><br>
+
+                                    Rabito’s AI was trained over 12 months on millions of data points, including
+                                    historical trade data from institutions, using it for our deep neural network
+                                    (DNN). <br><br>
+
+                                    The fast execution engine and DNN power the Rabito bot to execute trades
+                                    just like an experienced institutional trader, but better — because there's no
+                                    human error. In fact, Rabito can generate 30% more profit than the market.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mt-2">
+                        <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button collapsed fw-bold fs-5 text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree" style="background-color: #000918; color: white;">
+                                Do I have to use the AI bot myself?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="text-dark">Nope, just hold the tokens. The AI works on its own, operating
+                                    on-chain. By holding the tokens, you benefit from the bot’s automatic buy back
+                                    and burn mechanism. So, the more profitable the bot, the more Rabito tokens
+                                    will increase in value.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mt-2">
+                        <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button collapsed fw-bold fs-5 text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                                aria-controls="collapseThree" style="background-color: #000918; color: white;">
+                                I've completed the purchase, now what?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="text-dark">Sit back and relax. If you took part in our presale, your job
+                                    is done. <br>
+
+                                    Once you have finished the checkout process and made a deposit, you will receive
+                                    an order id. Store the order id in a safe place. <br>
+
+                                    After the presale ends, everyone will be able to claim their tokens using either
+                                    their order id or by verifying the wallet they used to make the purchase. <br>
+
+                                    Soon after, Rabito tokens will be listed on exchanges like Uniswap, KuCoin, and
+                                    others.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="" name="contact"></a>
+    <footer>
+        <div class="container-fluid p-0 m-0">
+            <div class="container   mx-auto">
+                <div class="row p-5">
+                    <div class="col-md-2">
+                        <img src="https://rabito.io/assets/img/logo.png" alt="header-Logo" class="logo mb-3">
+
+                    </div>
+                    <div class="col-md-4">
+                        <p>A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat.
+                            Exerci tationulla
+
+                        </p>
+                    </div>
+                    <div class="col-md-3 pl-md-5">
+                        <div class="nav_link">
+                            <h4>Company</h4>
+                            <ul class="list-group">
+
+                                <li class="">
+                                    <a class="" href="#about" data-scroll-nav="2">About Us</a>
+                                </li>
+                                <li class="">
+                                    <a class="" href="#blog" data-scroll-nav="3">Token Distribution</a>
+                                </li>
+                                <li class="">
+                                    <a class="" href="#faq" data-scroll-nav="5">FAQ</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="nav_link">
+                            <h4>Support</h4>
+                            <ul class="list-group">
+                                <li><a href="https://t.me/Rabito_admin" target="_blank">Contact</a></li>
+
+                                <li><a href="#">Downloads &amp; Resources</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Rabito. All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script src="index.js"></script>
